@@ -1,4 +1,8 @@
 <?php
+/**
+ * Debendra Prusty
+ * Netsmartz
+ */
 namespace Netsmartz\Book\Block;
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\Data\ProductInterfaceFactory;

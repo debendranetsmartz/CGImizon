@@ -1,4 +1,8 @@
 <?php
+/**
+ * Debendra Prusty
+ * Netsmartz
+ */
 namespace Netsmartz\Book\Setup;
 
 use Magento\Eav\Setup\EavSetup;
@@ -17,6 +21,10 @@ class InstallData implements InstallDataInterface
     private $attributeSet;
     private $categorySetupFactory;
 
+    /**
+     * InstallData constructor
+     *
+     */
     public function __construct(EavSetupFactory $eavSetupFactory, AttributeSetFactory $attributeSetFactory, CategorySetupFactory $categorySetupFactory )
     {
         $this->eavSetupFactory = $eavSetupFactory;
@@ -24,6 +32,10 @@ class InstallData implements InstallDataInterface
         $this->categorySetupFactory = $categorySetupFactory;
     }
 
+    /**
+     * Attributes Install
+     *
+     */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         $setup->startSetup();
