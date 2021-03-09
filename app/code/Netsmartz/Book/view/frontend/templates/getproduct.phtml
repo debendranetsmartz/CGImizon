@@ -1,0 +1,17 @@
+<?php $getproduct = $this->getProductlist(); ?>
+<table>
+    <tr>
+        <th>Product Name</th>
+        <th>ISBN</th>
+    </tr>
+
+    <?php
+    $isbn = "";
+    foreach ($getproduct as $item) {
+        if(isset($item['_source']['isbn'])) {$isbn = $item['_source']['isbn'];}
+        else {$isbn = "";}
+        echo "<tr><td>".$item['_source']['name']."</td><td>".$isbn."</td></tr>";
+    }
+    ?>
+</table>
+

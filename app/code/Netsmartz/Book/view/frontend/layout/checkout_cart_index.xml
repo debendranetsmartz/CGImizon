@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="additional.product.info">
+            <block class="Netsmartz\Book\Block\CartItemIsbnBlock"
+                   name="netsmartz.cart.item.book" template="Netsmartz_Book::product_isbn.phtml" before="-">
+            </block>
+        </referenceBlock>
+    </body>
+</page>
